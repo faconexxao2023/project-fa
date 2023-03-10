@@ -1,0 +1,1064 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1vw;
+}
+
+/* Pallet Collors */
+:root {
+  --nav-color: hsl(16.1, 89.1%, 53.1%);
+  --body-or-title-color: hsl(0, 0%, 100%);
+  --content-color: hsl(0, 9.5%, 81.4%);
+  --title-color: hsl(39.1, 89.7%, 50.4%);
+  --hover-use: hsl(0, 75.7%, 48.4%);
+  --hover-sec: hsl(55.9, 96%, 48.4%);
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font: 700 2.3vw "Roboto", sans-serif;
+  color: var(--body-or-title-color);
+  /* margin-top: 30vw; */
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+section {
+  margin-bottom: 5vw;
+}
+
+/* ==========================Session Navigation=================== */
+.principal-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--nav-color);
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 100000;
+  width: 100%;
+  height: 12vw;
+  /* margin-left:3vw ;
+  margin-right:3vw ; */
+}
+
+/* Itens Menu */
+.sessions-fa {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5vw;
+  margin-right: 3vw;
+  background-color: none;
+  margin-top: 3vw;
+}
+
+.font-title {
+  font: 400 1.5vw "Roboto", sans-serif;
+  color: var(--body-or-title-color);
+}
+
+.font-title:hover {
+  border-bottom: 0.2vw solid yellow;
+  color: yellow;
+}
+
+.button-fake {
+  color: var(--body-or-title-color);
+  font: 400 1.5vw "Roboto", sans-serif;
+}
+
+.button-fake:hover {
+  /* border-bottom: 0.2vw solid yellow; */
+  color: yellow;
+}
+
+/* Dropdowns config */
+.dropdown-item {
+  color: #000;
+  font: 400 1.2vw "Roboto", sans-serif;
+  background-color: var(--nav-color);
+  height: 3vw;
+}
+
+.dropdown-item:hover {
+  color: yellow;
+  font: 400 1.2vw "Roboto", sans-serif;
+  background-color: var(--nav-color);
+  border-bottom: 0.2vw solid yellow;
+}
+
+/* Desabilitando icon-menu desktop */
+
+.icon-menu {
+  display: none;
+}
+.icon-close {
+  display: none;
+}
+
+/* ==========================SECTION BANNER=================== */
+
+#banners {
+  margin-top: 8vw;
+}
+.logo-fa {
+  width:  32vw;
+  height: 32vw;
+  padding: 1vw;
+}
+.icon-wpp {
+  width: 2vw;
+}
+
+.title-banner {
+  width: 40vw;
+}
+
+.img-back {
+  display: relative;
+
+  width: 100vw;
+  height: 40vw;
+}
+
+.container-flex-content-button {
+  position: absolute;
+  display: flex;
+  justify-content: initial;
+  flex-direction: column;
+  top: 35%;
+  /* left: 50%; */
+  width: 100%;
+  padding: 3vw 3vw;
+}
+
+.content-banners {
+  color: #d4cbcb;
+  font: 400 1.2vw "Roboto", sans-serif;
+  width: 41vw;
+}
+
+.mark-emp {
+  font: 400 1.2vw "Roboto", sans-serif;
+  color: var(--nav-color);
+}
+
+span {
+  font: 700 2.3vw "Roboto", sans-serif;
+  color: var(--nav-color);
+}
+
+.button-banner {
+ width: 15vw;
+  background-color: green;
+  color: var(--body-or-title-color);
+  font: 700 1vw "Roboto", sans-serif;
+  margin-bottom: 3vw;
+  text-align: center;
+  padding: 1vw 1vw;
+  border-radius: 0.5vw;
+  cursor: pointer;
+}
+
+.button-banner:hover {
+  color: var(--body-or-title-color);
+  background-color: rgb(48, 175, 48);
+  transition: 0.3s;
+}
+
+/* ==========================SECTION HOME=================== */
+/* .section-home {
+   padding: 3vw; 
+  
+} */
+
+.container-principal-dropdown {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* gap: 15vw; */
+  align-items: normal;
+  overflow-y: hidden;
+  height: 40vw;
+ 
+}
+
+.title-home {
+  font: 700 2.3vw "Roboto", sans-serif;
+  color: var(--nav-color);
+  text-align: center;
+  margin-bottom: 1vw;
+}
+
+.content-home {
+  text-align: center;
+  font: 400 1.4vw "Roboto", sans-serif;
+  color: gray;
+  margin-bottom: 5vw;
+}
+
+#carouselExampleSlidesOnly {
+  width: 32vw;
+  margin-bottom: 5vw;
+ 
+}
+
+.d-block {
+  border-radius: 1vw !important;
+}
+
+/* .title-drop {
+  font: 400 2.1vw "Roboto", sans-serif ;
+  color: var(--nav-color)  ;
+
+} */
+
+#ul-home {
+  font: 400 1.1vw "Roboto", sans-serif !important ;
+  width: 32.2vw;
+  border: none;
+  color: #141414 !important ;
+  background-color: #fff !important ;
+
+  
+
+}
+
+#ul-drop-home {
+  font: 400 1.1vw "Roboto", sans-serif !important ;
+  width: 32.2vw;
+  border: none;
+  color: #141414 !important ;
+  background-color: #fff !important ;
+}
+
+
+.content-drop {
+  font: 400 1.2vw "Roboto", sans-serif;
+  color: #141414;
+  
+}
+
+.title-drop {
+  font: 700 2vw "Roboto", sans-serif;
+  color: var(--nav-color);
+  padding: 2vw;
+  border-bottom: 0.1vw solid rgb(212, 212, 212);
+}
+
+.dropdown-toggle::after {
+  margin-left: 15vw;
+  color: gray;
+}
+
+.button-produtos {
+  background-color: rgb(54, 54, 211);
+  padding: 0.4vw;
+  color: var(--body-or-title-color);
+  font: 700 1vw "Roboto", sans-serif;
+  border-radius: 0.3vw;
+}
+.button-produtos:hover {
+  background-color: rgb(72, 72, 212);
+  color: var(--body-or-title-color);
+}
+
+.img-drops {
+  margin-left: 11.7vw;
+  width: 1.1vw;
+  height: 1.1vw;
+}
+
+.diviser-1 {
+  border-bottom: 0.3vw solid rgb(255, 153, 0);
+  width: 10vw;
+  margin-left: 45vw;
+  margin-bottom: 2vw;
+}
+
+.title-product-ind {
+  color: var(--nav-color);
+  margin-top: 1vw;
+ font-weight: 700;
+
+}
+.content-product-ind {
+  font: 400 1.2vw "Roboto", sans-serif;
+  color: #141414;
+}
+
+/* ==========================SECTION CONTACT =================== */
+
+.section-contact {
+  background-color: rgb(240, 218, 203);
+  /* height: 100vw; */
+}
+.title-contact {
+  color: var(--nav-color);
+  text-align: center;
+  font: 700 2.3vw "Roboto", sans-serif;
+  padding: 1.3vw;
+  
+}
+
+.container-principal-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: normal;
+  margin-top: 5vw;
+  /* margin-right: 18.5vw; */
+}
+
+.title-adress {
+  font: 700 2vw "Roboto", sans-serif;
+  color: var(--nav-color);
+  position: initial;
+}
+
+.edit-link-contact {
+  color: #000;
+  font: 400 1.2vw "Roboto", sans-serif;
+  cursor: pointer;
+}
+
+.forms {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-e-mails {
+  margin-bottom: 3vw;
+}
+
+.container-adress {
+  display: flex;
+  flex-direction: column;
+  align-items: none;
+    
+}
+
+.adress {
+  font: 400 1.2vw "Roboto", sans-serif;
+}
+
+.container-telefones {
+  margin-bottom: 3vw;
+  margin-top: 3vw;
+}
+
+.container-buttons-seller {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+
+.button-contact-wpp {
+ width: 15vw;
+  
+  background-color: green;
+  color: var(--body-or-title-color);
+  font: 700 1vw "Roboto", sans-serif;
+
+  text-align: center;
+  padding: 1.5vw 1.5vw;
+  border-radius: 0.5vw;
+  cursor: pointer;
+}
+.button-contact-wpp:hover {
+  background-color: rgb(48, 175, 48);
+  color: var(--body-or-title-color);
+  transition: 0.3s;
+}
+
+.diviser-2 {
+  border-bottom: 0.3vw solid rgb(255, 153, 0);
+  width: 20vw;
+  margin-left: 40vw;
+  /* margin-top: 1vw; */
+}
+
+/* ICONS CONTACT  */
+.flex-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: -1vw;
+}
+.email-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: -0.3vw;
+}
+
+.adress-contact-i {
+  margin-bottom: 1vw;
+}
+
+.adress-b {
+  margin-bottom: 2vw;
+  font: 400 1.2vw "Roboto", sans-serif;
+}
+
+.tel-contact {
+  margin-bottom: 1vw;
+}
+
+.email-contact {
+  margin-bottom: 0.8vw;
+}
+
+.title-forms {
+  color: var(--nav-color);
+
+  font: 700 2.3vw "Roboto", sans-serif;
+}
+
+/* Formulario */
+
+input {
+  border-radius: 0.3vw;
+  width: 30vw;
+  height: 2.5vw;
+  margin-bottom: 0.5vw;
+  border-color: #ccc;
+  padding: 0.5vw;
+  font: 400 1.2vw "Roboto", sans-serif;
+}
+
+textarea {
+  border-radius: 0.3vw;
+  margin-bottom: 0.5vw;
+  padding: 0.5vw;
+  font: 400 1.2vw "Roboto", sans-serif;
+}
+
+input::placeholder {
+  padding: 0.3vw;
+  color: #000000;
+  font: 400 1.2vw "Roboto", sans-serif;
+}
+
+textarea::placeholder {
+  padding: 0.3vw;
+  border-color: #ccc;
+  color: #000000;
+  font: 400 1.2vw "Roboto", sans-serif;
+}
+
+.button-forms-contact {
+  border-radius: 0.3vw;
+  height: 2.5vw;
+  background-color: var(--nav-color);
+  color: var(--body-or-title-color);
+  font: 700 1.2vw "Roboto", sans-serif;
+  border: none;
+  cursor: pointer;
+}
+.button-forms-contact:hover {
+  background-color: rgb(246, 132, 56);
+}
+
+/* ====================================SECTION LOCALIZAÇÃO (MAP)=========== */
+.container-map {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-map {
+  font: 700 2.3vw "Roboto", sans-serif;
+  color: var(--nav-color);
+  text-align: center;
+}
+
+.diviser-3 {
+  border-bottom: 0.3vw solid rgb(255, 153, 0);
+  width: 12vw;
+
+  margin-top: 0.8vw;
+  margin-bottom: 3vw;
+}
+
+iframe {
+  width: 100vw;
+  height: 37vw;
+}
+/* CLASSE VALIDATION FORMS */
+.alert-invalid-email {
+  color: red;
+  font: 400 1vw "Roboto", sans-serif;
+}
+
+/* ==========================SECTION FOOTER=================== */
+.container-principal-footer {
+  /* padding: 2vw 3vw; */
+  background-color: var(--nav-color);
+  display: flex;
+  justify-content: initial;
+  flex-direction: column;
+  width: 100vw;
+  height: auto;
+}
+
+.container-logo-footer {
+  width: 17vw;
+  height: 17vw;
+}
+
+
+.logo-fa-footer {
+  width: 20vw;
+  height: 23vw;
+  margin-left: -3.2vw;
+  
+  /* margin-top: 1vw; */
+  /* padding: 2vw; */
+  
+}
+
+.containers-icons-footer {
+  display: flex;
+  justify-content: initial;
+}
+
+.icon-insta {
+  width: 2vw;
+}
+
+.flex-icons-footer {
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+
+}
+
+.reserved {
+  color: var(--body-or-title-color);
+  font: 400 1.3vw "Roboto", sans-serif;
+  padding: 0vw 2vw;
+}
+
+.devs-footer {
+  color: var(--body-or-title-color);
+  font: 400 1vw "Roboto", sans-serif;
+  padding: 0vw 2vw;
+
+}
+
+.devy {
+  color: #141414;
+  font: 700 1vw "Roboto", sans-serif;
+  
+}
+
+.container-adress-footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  
+}
+ 
+.adress-footer {
+  color: var(--body-or-title-color);
+  font: 400 1.3vw "Roboto", sans-serif;
+}
+
+#backToTopButton {
+  position: fixed;
+  bottom: 2vw;
+  right: 2.5vw;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transform: translateY(100%);
+  transition: 200ms;
+}
+
+#backToTopButton.on {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* ==========================Session Navigation-@MEDIA =================== */
+
+@media (max-width: 768px) {
+  /* ==========================Session Navigation-=================== */
+
+  .sessions-fa {
+    display: none;
+  }
+
+  .principal-nav {
+    height: 27vw;
+  }
+
+  .logo-fa {
+    width: 60vw;
+    height: 60vw;
+    padding: 1vw;
+  }
+
+  .container-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-right: 6vw;
+  }
+
+  .principal-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--nav-color);
+  }
+
+  .icon-menu {
+    width: 1vw;
+    margin-right: 9vw;
+    display: flex;
+    cursor: pointer;
+  }
+
+  .container-logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .img-icon {
+    width: 5vw;
+  }
+
+  /* ==========================Mostrar menu-=================== */
+
+  .navigation.show .sessions-fa {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12vw;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 15vw;
+  }
+
+  .navigation.show ul li a {
+    color: var(--body-or-title-color);
+    font: 700 4.5vw "Roboto", sans-serif;
+  }
+  .navigation.show ul li a:hover {
+    border-bottom: 0.4vw solid yellow;
+    color: yellow;
+  }
+
+  nav.show .menu-fa {
+    opacity: 1;
+    visibility: visible;
+    background: var(--nav-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  nav.show .icon-close {
+    display: initial;
+    cursor: pointer;
+    margin-top: 10vw;
+    margin-right: 8vw;
+  }
+
+  nav.show .icon-menu {
+    display: none;
+  }
+
+  .show .button-fake {
+    display: initial;
+    font: 700 4.5vw "Roboto", sans-serif;
+  }
+
+  .show .dropdown-item {
+    font: 700 3vw "Roboto", sans-serif;
+    height: 5vw;
+  }
+
+
+  /* ==========================Section BANNER-=================== */
+  #banners {
+    background-color: rgb(240, 218, 203);
+    margin-top: 27vw;
+  }
+
+  .img-back {
+    display: relative;
+
+    width: 100vw;
+    height: 45vw;
+  }
+
+  .icon-wpp {
+    width: 4vw;
+  }
+  
+  .container-flex-content-button {
+    position: initial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 3vw; /*padrão pra espaçamentos*/
+    margin-bottom: 10vw;
+  }
+
+  .title-banner {
+    font: 700 5.5vw "Roboto", sans-serif;
+    text-align: center;
+    color: #131313;
+    margin-bottom: 3vw;
+    width: 90vw;
+  }
+
+  .content-banners {
+    color: #181717;
+    font: 400 3vw "Roboto", sans-serif;
+    text-align: center;
+    width: 70vw;
+  }
+
+  .mark-emp {
+    font: 700 3vw "Roboto", sans-serif;
+  }
+
+  span {
+    font: 700 5.5vw "Roboto", sans-serif;
+    color: var(--nav-color);
+  }
+
+  .button-banner {
+     width: 35vw;
+    background-color: green;
+    color: var(--body-or-title-color);
+    font: 700 2.5vw "Roboto", sans-serif;
+    margin-top: 2vw;
+    margin-bottom: 3vw;
+    text-align: center;
+    padding: 2vw 2vw;
+    border-radius: 0.5vw;
+    cursor: pointer;
+  }
+
+
+  
+  /* ==========================SECTION HOME=================== */
+
+  .container-principal-dropdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* gap: 15vw; */
+    align-items: center;
+    overflow-y: hidden;
+  }
+
+  .title-home {
+    font: 700 5.5vw "Roboto", sans-serif;
+    color: var(--nav-color);
+    text-align: center;
+    margin-bottom: 1vw;
+  }
+
+  .diviser-1 {
+    border-bottom: 0.7vw solid rgb(255, 153, 0);
+    width: 20vw;
+    margin-left: 40vw;
+  }
+  .content-home {
+    text-align: center;
+    font: 400 3vw "Roboto", sans-serif;
+    color: gray;
+    margin-bottom: 5vw;
+  }
+
+  #carouselExampleSlidesOnly {
+    width: 96vw;
+    padding: 3vw;
+    margin-top: 10vw;
+  }
+
+  .title-drop {
+    font: 700 3.5vw "Roboto", sans-serif;
+    color: var(--nav-color);
+    padding: 2vw;
+    border-bottom: 0.1vw solid rgb(212, 212, 212);
+  }
+
+  .dropdown-toggle::after {
+    margin-left: 60vw;
+    color: gray;
+  }
+
+  .img-drops {
+    margin-left: 54.5vw;
+    width: 2vw;
+    height: 2.2vw;
+  }
+
+  #ul-home {
+    position: initial !important;
+    margin-bottom: 20vw !important;
+  }
+
+  #ul-drop-home {
+    position: initial !important;
+    margin-bottom: 20vw !important;
+  }
+
+  .content-drop {
+    font: 400 2.7vw "Roboto", sans-serif;
+    width: 90vw;
+    margin-bottom: 3vw;
+  }
+
+  .button-produtos {
+    background-color: rgb(54, 54, 211);
+    padding: 2vw;
+    color: var(--body-or-title-color);
+    font: 700 2.3vw "Roboto", sans-serif;
+    border-radius: 0.3vw;
+  }
+
+
+
+  /*==========================SECTION CONTACT==================================*/
+  .container-principal-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-adress {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-telefones {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-e-mails {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button-contact-wpp {
+    width: 35vw;
+    
+
+    background-color: green;
+    color: var(--body-or-title-color);
+    font: 700 2.5vw "Roboto", sans-serif;
+    margin-top: 2vw;
+    margin-bottom: 3vw;
+    text-align: center;
+    padding: 2vw 2.5vw;
+    border-radius: 0.5vw;
+    cursor: pointer;
+  }
+
+  .title-contact {
+    font: 700 5.5vw "Roboto", sans-serif;
+  }
+
+  .diviser-2 {
+    border-bottom: 0.7vw solid rgb(255, 153, 0);
+    width: 30vw;
+    margin-left: 35vw;
+   
+ 
+  }
+
+  .title-adress {
+    font: 700 4.5vw "Roboto", sans-serif;
+  }
+
+  .adress {
+    font: 400 2.5vw "Roboto", sans-serif;
+  }
+  .adress-b {
+    font: 400 2.5vw "Roboto", sans-serif;
+    margin-bottom: 3vw;
+  }
+
+  .edit-link-contact {
+    font: 400 2.5vw "Roboto", sans-serif;
+  }
+
+  /* Formulario */
+
+  .container-forms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+  }
+
+
+  input {
+    border-radius: 0.7vw;
+    width:85vw;
+    height: 6vw;
+    margin-bottom: 0.5vw;
+    border-color: #ccc;
+    padding: 0.7vw;
+ 
+    font: 400 2.4vw "Roboto", sans-serif;
+  }
+
+  textarea {
+    border-radius: 0.3vw;
+    margin-bottom: 0.5vw;
+    padding: 0.7vw;
+    
+
+    font: 400 2.4vw "Roboto", sans-serif;
+  }
+
+  input::placeholder {
+    padding: 0.3vw;
+    color: #000000;
+    font: 400 2.5vw "Roboto", sans-serif;
+  }
+
+  textarea::placeholder {
+    padding: 0.3vw;
+    border-color: #ccc;
+    color: #000000;
+    font: 400 2.5vw "Roboto", sans-serif;
+  }
+
+  .button-forms-contact {
+    border-radius: 0.3vw;
+    height: 6vw;
+    background-color: var(--nav-color);
+    color: var(--body-or-title-color);
+    font: 700 2.5vw "Roboto", sans-serif;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 3vw;
+  }
+  
+  .button-forms-contact:hover {
+    background-color: rgb(246, 132, 56);
+  }
+
+  /* CLASSES LOCALIZAÇÃO (MAP)  */
+.container-map {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-map {
+  font: 700 5.5vw "Roboto", sans-serif;
+  color: var(--nav-color);
+  text-align: center;
+}
+
+.diviser-3 {
+  border-bottom: 0.7vw solid rgb(255, 153, 0);
+  width: 15vw;
+
+  margin-top: 0.8vw;
+  margin-bottom: 3vw;
+}
+
+iframe {
+  width: 93vw;
+  height: 60vw;
+}
+/* CLASSE VALIDATION FORMS */
+.alert-invalid-email {
+  color: red;
+  font: 400 1vw "Roboto", sans-serif;
+}
+  /*=====================SECTION FOOTER=====================*/
+
+  .logo-fa-footer {
+    width: 42vw;
+    height: 42vw;
+    margin-left: -9vw;
+    
+    /* margin-top: 1vw; */
+    /* padding: 2vw 3vw; */
+  }
+
+  
+
+  .icon-insta {
+    width: 5vw;
+  }
+  
+  .container-content-footer {
+    margin-top: 12vw;
+  }
+  
+  .container-principal-footer {
+    padding: 3vw;
+  }
+
+  .reserved {
+    color: var(--body-or-title-color);
+    font: 400 3vw "Roboto", sans-serif;
+    padding: 0vw 2vw;
+  }
+
+  .devs-footer {
+    font: 400 3vw "Roboto", sans-serif;
+
+  }
+
+  .devy {
+    font: 400 3vw "Roboto", sans-serif;
+  }
+
+  .adress-footer {
+    font: 400 2.5vw "Roboto", sans-serif;
+    width: 70vw;
+    text-align: center;
+  }
+}
