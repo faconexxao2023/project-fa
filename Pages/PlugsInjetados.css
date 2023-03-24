@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1vw;
+}
+
+/* Pallet Collors */
+:root {
+  --nav-color: hsl(16.1, 89.1%, 53.1%);
+  --body-or-title-color: hsl(0, 0%, 100%);
+  --content-color: hsl(0, 9.5%, 81.4%);
+  --title-color: hsl(39.1, 89.7%, 50.4%);
+  --hover-use: hsl(0, 75.7%, 48.4%);
+  --hover-sec: hsl(55.9, 96%, 48.4%);
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ==========================PLUGS INJETADOS =================== */
+
+.container-title-p {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15vw;
+}
+
+.title-plugs-injetados {
+  color: var(--nav-color);
+}
+
+.content-plugs {
+  font: 400 1.5vw "Roboto", sans-serif;
+}
+
+.diviser-1 {
+  border-bottom: 0.3vw solid rgb(255, 153, 0);
+  width: 10vw;
+  margin-left: 1vw;
+  margin-right: 2vw;
+  margin-bottom: 2vw;
+}
+
+/* ==========================gallecry-Photos =================== */
+
+.container-galeria-principal {
+  padding: 3vw 6vw;
+  background-color: rgb(240, 218, 203);
+ 
+}
+ 
+ 
+.testando-plug {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2vw;
+  
+}
+.foto-galery {
+  width:25vw;
+  transition: transform 0.5s ease-out; /* adiciona transição suave ao movimento */
+}
+
+.foto-galery:hover {
+  transform: translate(0vw, 1vw); /* move a imagem 1vw para a direita e para baixo */
+}
+
+.close-button {
+  visibility: hidden;
+}
+
+.container-button-prod {
+  display: flex;
+  justify-content: center;
+  margin-top: 3vw;
+}
+
+.button-prod-inject {
+  background-color: var(--nav-color);
+  color: var(--body-or-title-color);
+  font: 700 1.5vw "Roboto", sans-serif;
+  padding: 1vw 1.5vw;
+  border-radius: 0.5vw;
+  text-align: center;
+}
+
+.button-prod-inject:hover {
+ background-color: rgb(246, 132, 56);
+ color: var(--body-or-title-color);
+}
+
+
+
+/* ==========================RESPONSIVIDADE MEDIA =================== */
+
+@media (max-width: 768px) {
+  .container-title-p {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 35vw;
+  }
+
+  .title-plugs-injetados {
+    font: 700 5.5vw "Roboto", sans-serif;
+  }
+
+  .diviser-1 {
+    border-bottom: 0.7vw solid rgb(255, 153, 0);
+    width: 17vw;
+    margin-left: 1vw;
+    margin-right: 2vw;
+    margin-bottom: 2vw;
+    margin-top: 1.7vw;
+  }  
+  
+  
+  .content-plugs {
+    font: 400 2.5vw "Roboto", sans-serif;
+    margin-bottom: 3vw;
+  }
+
+  .foto-galery {
+    width: 35vw;
+  }
+  
+  .button-prod-inject {
+    background-color: var(--nav-color);
+    color: var(--body-or-title-color);
+    font: 700 2.3vw "Roboto", sans-serif;
+    padding: 2vw 2.5vw;
+    border-radius: 0.5vw;
+    text-align: center;
+    margin-bottom: 5vw;
+  }
+
+}
