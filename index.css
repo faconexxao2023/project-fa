@@ -754,6 +754,10 @@ iframe {
     margin-top: 27vw;
   }
 
+  .lamp-edit {
+   display: none;
+  }
+
   .img-back {
     display: relative;
 
