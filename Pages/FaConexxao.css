@@ -61,7 +61,7 @@ section {
 
 .card-1 {
   width: 25vw;
-  /* height: 12.5vw; */
+  /* height: 40vw; */
   border-radius: 0.3vw;
 }
 
@@ -114,18 +114,21 @@ span.about-span {
   flex-direction: row;
   justify-content: end;
   
-  padding-right: 3vw;
+  padding-right: 10vw;
 }
+
 
 .container-card-2 {
   display: flex;
   flex-direction: row;
+  
   gap: 2vw;
 }
 
 .container-card-3-principal {
   display: flex;
   flex-direction: row;
+  justify-content: initial;
   gap: 3.7vw;
   padding: 3vw 5vw;
 }
@@ -246,10 +249,11 @@ span.about-span {
 }
 
 .container-img-card {
-  display: flex;
+  /* display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 100%; */
+  display: none;
 }
 }
